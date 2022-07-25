@@ -1,0 +1,664 @@
+body {
+    background-image: url("../src/img/marmol.jpg");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    margin: auto;
+    width: 1300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.menu .lista a {
+    background: #2980B9;
+    color: white;
+    text-decoration: none;
+    padding: 20px 49px;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.menu .img a {
+    background: none;
+    padding: 0px 0px;
+    display: block;
+    border-width: 3px;
+    border-color: #0E49E6;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.menu .lista a:hover {
+    background-color: #041D61;
+    font-weight: bold;
+}
+
+.menu>li {
+    float: left;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu li ul li {
+    position: relative;
+    z-index: 1;
+}
+
+.menu li ul li ul {
+    right: -150px;
+    top: 0px;
+}
+
+.contenedor_encabezado {
+    background-color: none;
+    overflow: hidden;
+    padding: 0px;
+}
+
+html {
+    border: 10px solid #2980B9;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    height: 130px;
+    background-color: #2980B9;
+    padding: 15px;
+    margin: auto;
+}
+
+.pie {
+    height: 100px;
+    width: 1200px;
+    background-color: none;
+    margin: auto;
+}
+
+.contenedor_redes {
+    height: 30px;
+    width: 180px;
+    background-color: #5499C7;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.contenedor_redes ul li a img {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 5px;
+}
+
+.logo_02 img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo_02 {
+    background-color: white;
+    float: left;
+    margin-left: 340px;
+    margin-right: 340px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F5E30C;
+    border-radius: 8px;
+}
+
+.asociados {
+    height: 95px;
+    background-color: none;
+    float: left;
+    margin-left: 100px;
+}
+
+.asociados #asociado {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.asociados li a {
+    color: white;
+}
+
+.derechos {
+    margin-top: 40px;
+    background-color: none;
+    width: 247px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.derechos p {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+
+/*DE AQUI PARA ARRIBA ES CODIGO PARA TODAS LAS PAGINAS*/
+
+.menu #slide1 {
+    background-color: none;
+}
+
+.Contenedor_Slider {
+    margin: auto;
+    width: 820px;
+    height: 420px;
+    background-color: none;
+    overflow: hidden;
+    padding: 0px;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: none;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 800px;
+    height: 400px;
+    object-fit: center;
+    border-radius: 35px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0E49E6;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.Contenedor_Slider .dash .d01 {
+    background-color: white;
+    height: 15px;
+}
+
+.dash .d01 {
+    margin: 1mm;
+    float: left;
+    border-radius: 100px;
+}
+
+.dash .d01 a {
+    text-decoration: none;
+}
+
+.dash {
+    background-color: none;
+    width: 800px;
+    height: 30px;
+    padding-left: 330px;
+}
+
+p {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.frase {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    background-color: none;
+    margin-bottom: 10px;
+}
+
+.video_contenedor {
+    height: 300px;
+    width: 600px;
+    background-color: none;
+    margin-top: 20px;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 35px;
+    overflow: hidden;
+    padding: 3px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #F5E30C;
+}
+
+video {
+    margin: auto;
+    border-radius: 10px;
+}
+
+.frase_muestra {
+    height: 50px;
+    width: 335px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    color: #DF171D;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0E49E6;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.muestra_imagenes {
+    height: 415px;
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: none;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.imagenes_productos {
+    height: 200px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+
+/****Para los titulos de todas las paginas******/
+
+.contenedor_titulo {
+    height: 100px;
+    width: 350px;
+    background-color: none;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.img_titulo {
+    height: 100px;
+    width: 350px;
+}
+
+
+/**Pagina de Nosotros**/
+
+#conte {
+    width: 1230px;
+    height: 380px;
+    background-color: none;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.pt {
+    width: 380px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F5E30C;
+}
+
+#quien {
+    width: 1000px;
+    height: 140px;
+    background-color: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-size: 28px;
+    text-align: justify;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2980B9;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#mvv {
+    width: 1090px;
+    height: 300px;
+    background-color: #F7DC6F;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mv {
+    width: 480px;
+    height: 240px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 25px;
+    float: left;
+    margin-left: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2980B9;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mv p {
+    font-size: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.ulti {
+    width: 540px;
+    height: 220px;
+    background-color: #F7DC6F;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.util02 {
+    width: 470px;
+    height: 160px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2980B9;
+}
+
+.util02 h1 {
+    margin-bottom: 10px;
+}
+
+.util03 {
+    height: 100px;
+    width: 210px;
+    background-color: none;
+    margin-left: 15px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    list-style: none;
+}
+
+
+/**********Pagina Telas*********/
+
+.contenedor_te {
+    height: 400px;
+    width: 800px;
+    background-color: none;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.te {
+    height: 400px;
+    margin: auto;
+    width: 800px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2980B9;
+    margin-bottom: 20px;
+}
+
+.te02 {
+    height: 300px;
+    width: 1100px;
+    background-color: none;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.but {
+    background-color: none;
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 65px;
+}
+
+.but button {
+    background-color: none;
+}
+
+.but img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.info {
+    width: 690px;
+    height: 150px;
+    background-color: none;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: justify;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2980B9;
+}
+
+.but01 {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2980B9;
+}
+
+
+/*Pagina de Formulario*/
+
+.formulario {
+    background: rgba(0, 0, 255, 0.45);
+    width: 90%;
+    margin: auto;
+    max-width: 650px;
+    padding: 5px 65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.formulario .etiquetas {
+    display: block;
+    color: black;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.formulario .caja_texto,
+.text_area {
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    border-bottom: 2px solid #0f477f;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario .text_area {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.formulario .boton {
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f477f;
+    font-size: 26px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: #fff;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.formulario .boton:hover {
+    background: #0d67bf;
+}
+
+.serv {
+    margin: auto;
+    height: 1000px;
+    width: 1200px;
+    margin-bottom: 20px;
+    background-color: lavenderblush;
+}
+
+.serv01 {
+    margin: auto;
+    height: 300px;
+    width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: none;
+}
+
+.serv02 {
+    margin: auto;
+    height: 250px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: none;
+    float: left;
+}
+
+.serv03 {
+    margin: auto;
+    height: 250px;
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: none;
+    float: left;
+}
+
+#foto_proceso {
+    height: 250px;
+    width: 300px;
+}
+
+#foto_tejido {
+    height: 250px;
+    width: 300px;
+}
+
+#fotote {
+    height: 250px;
+    width: 300px;
+}
+
+.titulo_tela {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.parrafo_telas {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: inherit;
+}
+
+#contenedorImg {
+    background-color: none;
+    height: 500px;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
